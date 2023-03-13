@@ -5,7 +5,10 @@ import {
   } from "react-router-dom";
 import './style.css'
 
-import notas from '../ejemplos/db.js'
+import notas from '../../ejemplos/db.js'
+import AllButton from "../button/button";
+import ButtonFunction from "../button/buttonfunction";
+import ButtonLink from "../button/button";
 
 export default function EditarNotas() {
     const [titulo, setTitulo] = useState("")
@@ -61,8 +64,8 @@ export default function EditarNotas() {
             maxLength={1024} 
             onChange={handleChangeContenido}
             ></textarea>
-            <Link to= "/notas/buscar" ><button>regresar</button></Link>
-            <button onClick={guardarCambios}>Guardar</button>
+            <ButtonLink to="/notas/buscar" text="Regresar"/>
+            <ButtonFunction fun={guardarCambios} text='Guardar'/>
         </div>
     </>
 }
