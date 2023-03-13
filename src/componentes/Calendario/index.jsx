@@ -100,12 +100,10 @@ export default function Calendario() {
         <SelectYear year={year} setYear={setYear}/>
     </div>
     
-    <div>
-        <ol>
-            <DiasSemana/>
-            <li className='first-day'>1</li>
-            {<CalendarDay month={month} year={year}/>}
-        </ol>
-    </div>
+    <ol>
+        <DiasSemana/>
+        <li className='first-day'>1</li>
+        {<CalendarDay month={month} year={year}/>}
+    </ol>
     </>
 }
