@@ -1,0 +1,39 @@
+/* .inicio-menu {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+}
+
+.inicio-menu li .link img{
+    padding: 1rem;
+    width: 100%;
+}
+
+.inicio-menu li .link:hover,.inicio-menu li .link:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.15);
+    position:relative;
+    z-index:5;
+}
+
+.inicio-menu li .link{
+    transform:rotate(-6deg);
+}
+    
+.inicio-menu li:nth-child(even) .link{
+    transform:rotate(4deg);
+} */
+
+.icon-inicio {
+    font-size: 15rem;
+}
+
+.icon-inicio:hover{
+    opacity: 0.9;
+}
+
+.inicio-menu {
+    display: flex;
+    justify-content: space-around;
+}

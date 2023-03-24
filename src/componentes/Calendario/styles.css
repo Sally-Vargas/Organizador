@@ -1,0 +1,40 @@
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.calendar-legend{
+    display: inline-flex;
+    gap: 1rem;
+    margin: auto;
+}
+.calendar-legend:hover{
+    
+    padding: 0;
+}
+/* .first-day {
+    grid-column-start: 5;
+} */
+
+/* menu del mes */
+
+.select-month{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    border: none;
+    font-size: 1.8rem;
+    background-color: #282c34;
+    color: white;
+}
+
+.select{
+    font-size: 1.8rem;
+    width: 11rem;
+    font-size: 1.8rem;
+    padding: 3px 11px;
+    position: relative;
+}
+.select:hover{
+    text-decoration: underline;
+}
